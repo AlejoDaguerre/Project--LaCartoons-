@@ -1,0 +1,673 @@
+/*CABECERA*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+#banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner2.png");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+#title {
+  display: block;
+  font-family: "GROBOLD";
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0px auto !important;
+  text-align: center;
+  line-height: 150px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#title:hover {
+  transform: scale(1, 1.2);
+}
+
+#menu {
+  background-color: #b71c1c;
+  width: 100%;
+  height: 45px;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  line-height: 43px;
+  margin-right: 70px;
+}
+
+#menu ul li {
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 5px 0px 5px;
+}
+
+#menu ul li a {
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 200ms;
+}
+
+#menu ul li a:hover {
+  color: #dd9595;
+  opacity: 1;
+}
+
+
+.searcher {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  overflow: hidden;
+  width: 200px;
+  background-color: #971010;
+  margin: 5px 10px 5px 10px;
+  padding: 8px;
+  border: 1px solid #971010;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searcher-button {
+  display: block;
+  font-family: "WebSymbolsRegular";
+  font-size: 15px;
+  border: none;
+  float: right;
+  align-items: center;
+  height: 45px;
+  padding: 0px 5px 0px 5px;
+  box-shadow: outset 2px 2px 2px 2px #971010;
+  background: transparent;
+  cursor: pointer;
+  transition: 300ms all;
+}
+
+.searcher-button:hover {
+  color: #ffffff;
+}
+
+.comingSoon {
+  display: block;
+  color: #6d6868;
+  font-size: 23px;
+  height: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0px auto;
+  margin-top: 63px;
+  text-align: center;
+}
+
+.classic-series {
+  display: block;
+  color: #6d6868;
+  font-size: 23px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+hr {
+  border-top: 4px solid #6d6868;
+}
+
+.info {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  max-width: 1140px;
+  margin: 15px;
+}
+
+.title-categories {
+  display: block;
+  color: #6d6868;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+#channels {
+  display: flex;
+  margin-top: 30px;
+}
+
+#channels ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+#channels ul li {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-right: 20px;
+}
+
+#channels ul li > button {
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.nickelodeon {
+  border: 1px solid #ff6700;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #ff6700;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nickelodeon:hover {
+  border: 1px solid #da5700;
+  background-color: #da5700;
+}
+
+.cartoon-network {
+  border: 1px solid #6d6868;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #6d6868;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cartoon-network:hover {
+  border: 1px solid #565252;
+  background-color: #565252;
+}
+
+.fox-kids {
+  border: 1px solid #e53935;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #e53935;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fox-kids:hover {
+  border: 1px solid #912523;
+  background-color: #912523;
+}
+
+.hanna-barbera {
+  border: 1px solid #795548;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #795548;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hanna-barbera:hover {
+  border: 1px solid #5d4137;
+  background-color: #5d4137;
+}
+
+.disney {
+  border: 1px solid #1e88e5;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #1e88e5;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.disney:hover {
+  border: 1px solid #176db9;
+  background-color: #176db9;
+}
+
+.warner-channel {
+  border: 1px solid #1b6d85;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #1b6d85;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.warner-channel:hover {
+  border: 1px solid #155467;
+  background-color: #155467;
+}
+
+.marvel {
+  border: 1px solid #b71c1c;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #b71c1c;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.marvel:hover {
+  border: 1px solid #881515;
+  background-color: #881515;
+}
+
+.other {
+  border: 1px solid #25791f;
+  border-radius: 15px 50px 30px 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #25791f;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.other:hover {
+  border: 1px solid #1d6418;
+  background-color: #1d6418;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 250px;
+  height: 380px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 18px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/padrinos-magicos.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .container .card:nth-child(2) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/Pucca.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .container .card:nth-child(3) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/teen-titans.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+body .container .card:nth-child(4) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/dragon-ball.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(4) .box .content a {
+  background: rgb(156, 36, 36);
+}
+
+body .container .card:nth-child(5) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/dexter.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(5) .box .content a {
+  background: #552;
+}
+
+body .container .card:nth-child(6) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/johnny-bravo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(6) .box .content a {
+  background: rgb(255, 69, 17);
+}
+
+body .container .card:nth-child(7) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/tom-jerry.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(7) .box .content a {
+  background: #2196f3;
+}
+
+body .container .card:nth-child(8) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/Flapjack.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(8) .box .content a {
+  background: #e91e63;
+}
+
+body .container .card:nth-child(9) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/billy-mandy.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(9) .box .content a {
+  background: #9423c1;
+}
+
+body .container .card:nth-child(10) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/chicas.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(10) .box .content a {
+  background: #c12372;
+}
+
+body .container .card:nth-child(11) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/ben-10.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(11) .box .content a {
+  background: #23c186;
+}
+
+body .container .card:nth-child(12) .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/cowboy-bebop.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body .container .card:nth-child(12) .box .content a {
+  background: #c19c23;
+}
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+body .container .card .box:hover a {
+  transform: translateY(100px);
+}
+body .container .card .box:hover h3 {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h3 {
+  font-size: 20px;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.pagination {
+  display: block;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination a {
+  color: #ffffff;
+  align-items: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 3px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+footer {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #393636;
+}
+
+.footer-content {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.copy {
+  max-width: 400px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  color: #6d6868;
+  text-align: center;
+  align-items: center;
+  margin: 0px auto;
+  margin-top: 15px;
+}
+
+@font-face {
+  font-family: "GROBOLD";
+  src: url("../fonts/GROBOLD/GROBOLD.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #212121;
+}
+
+#body {
+  display: block;
+  width: 1170px;
+  min-height: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:1200px){
+  #menu ul {
+  display: flex;
+  justify-content: center;
+  float: none;
+  }
+
+  #body {
+    max-width: 100%;
+  }
+
+  .comingSoon {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .classic-series {
+    display: flex;
+    justify-content: center;
+    color: #6d6868;
+  }
+
+  .info {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  .title-categories {
+    display: flex;
+    justify-content: center;
+    color: #6d6868;
+  }
+
+  #channels ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #channels ul li {
+    margin-bottom: 20px;
+  }
+}
